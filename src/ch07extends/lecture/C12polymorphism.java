@@ -1,6 +1,6 @@
 package ch07extends.lecture;
 
-public class C12polimorphism {
+public class C12polymorphism {
     public static void main(String[] args) {
         Malamute2 dog = new Malamute2();
         dog.breath();
