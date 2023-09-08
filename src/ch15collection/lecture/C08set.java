@@ -15,7 +15,7 @@ public class C08set {
             System.out.println(str);
         }
         set.forEach(System.out::println);
-        // 순서가 보장되지 않음 <- HashSet의 특징
+        // 순서가 보장되지 않음 <- HashSet의 특징.
 
     }
 }

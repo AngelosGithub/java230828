@@ -9,7 +9,7 @@ public class C07set {
         // 중복 저장 불가능
         Set<String> set1 = new HashSet<>();
 
-        // add : 원소 추가
+        // add : 원소 추가.
         set1.add("java");
         set1.add("spring");
         set1.add("react");

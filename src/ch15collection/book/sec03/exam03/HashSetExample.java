@@ -17,7 +17,7 @@ public class HashSetExample {
         while(iterator.hasNext()) {
             String element = iterator.next();
             System.out.println("element = " + element);
-
+            // 출력
             if(element.equals("jsp")) {
                 iterator.remove();
             }

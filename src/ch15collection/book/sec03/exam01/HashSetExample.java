@@ -10,7 +10,7 @@ public class HashSetExample {
         set.add("java");
         set.add("jdbc");
         set.add("jsp");
-        set.add("java");  // 중복객체라서 저장안됨
+        set.add("java");  // 중복객체라서 저장안됨.
         set.add("spring");
 
         int size = set.size();
