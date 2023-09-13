@@ -2,6 +2,8 @@ package ch17stream.book.exercise.p06;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.OptionalDouble;
 
 public class Example {
     public static void main(String[] args) {
@@ -36,5 +38,11 @@ public class Example {
                 .map(m -> m.getAge())
                 .reduce(Integer.MAX_VALUE, (x,y) -> Math.min(x, y));
         System.out.println("min = " + min);
+
+        OptionalDouble avg = list.stream()
+                .mapToDouble(m -> m.getAge())
+                .average();
+
+        System.out.println("avg = " + avg);
     }
 }
