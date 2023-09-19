@@ -17,7 +17,7 @@ public class C16copy {
 
                 while ((len = reader.read(chars)) != -1) {
                     for (int i=0; i<len; i++) {
-                        System.out.println(chars[i]);
+//                        System.out.println(chars[i]);
                     }
                 }
             }
