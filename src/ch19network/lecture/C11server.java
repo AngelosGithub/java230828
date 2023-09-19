@@ -16,7 +16,7 @@ public class C11server {
 
             try (ps; outputStream; socket; serverSocket) {
                 String html = """
-                <h1> 내가 직접 만든 서버에서 만든 html </h1>
+                <h1> 내가 직접 만든 서버에서 만든 html!! </h1>
                 """;
 
                 ps.println("http/1.1 200");
