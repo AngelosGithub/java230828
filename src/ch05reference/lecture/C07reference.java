@@ -1,10 +1,10 @@
-package ch05reference;
+package ch05reference.lecture;
 
-public class C08array {
+public class C07reference {
 	public static void main(String[] args) {
-		int[] a= {3,4,5};
-		int[] b= {3,4,5};
-		int[] c= a;
+		String a = "java";
+		String b = "spring";
+		String c = a;
 		
 		int code1 = System.identityHashCode(a);
 		int code2 = System.identityHashCode(b);
@@ -14,10 +14,5 @@ public class C08array {
 		System.out.println(code2);
 		System.out.println(code3);
 		
-		System.out.println(a[0]);
-		a[0] = 33;
-		System.out.println(a[0]);
-		System.out.println(c[0]);
-		System.out.println(b[0]);
 	}
 }
