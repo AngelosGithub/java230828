@@ -2,6 +2,7 @@ package ch12api.lecture;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class C26reflection {
     public static void main(String[] args) {
@@ -13,11 +14,14 @@ public class C26reflection {
         System.out.println("c.getSimpleName() = " + c.getSimpleName());
         System.out.println("c.getPackageName() = " + c.getPackageName());
 
-//        Field[] fields = c.getDeclaredField();
-//        System.out.println("fields.length = " + fields.length);
+        Field[] fields = c.getDeclaredFields();
+        System.out.println("fields.length = " + fields.length);
 
         Constructor[] Constructors = c.getDeclaredConstructors();
         System.out.println("Constructors = " + Constructors.length);
+
+        Method[] methods = c.getDeclaredMethods();
+        System.out.println("methods = " + methods.length);
     }
     
 }
@@ -26,6 +30,14 @@ class MyClass26 {
     private String name;
 
     public MyClass26(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 }
